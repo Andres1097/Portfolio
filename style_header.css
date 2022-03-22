@@ -1,0 +1,276 @@
+.container{
+    padding: 3rem 1.5rem;
+}
+
+.container > h1{
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+/*  Barra Navegacion    */
+
+.barra{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0;
+    font-size: 1.8rem;
+}
+
+.barra h1{
+    margin: 0 20px;
+    color: white;
+}
+
+.barra__lista{
+    display: flex;
+    flex-direction: row;
+}
+
+.barra__lista__item{
+    text-decoration: none;
+    color: white;
+    margin: 0 7px;
+}
+
+/*   Encabezado   */
+
+.encabezado{
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.encabezado__descripcion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.encabezado__descripcion legend{
+    font-size: 2.2rem;
+    margin: 2rem 0;
+}
+
+.encabezado__perfil{
+    width: 20%;
+    border-radius: 4rem;
+}
+
+/*Sobre Mi*/
+
+#acercade h1{
+    font-family: Verdana;
+}
+
+/*  Skills / Conocimiento   */
+
+#skills h1{
+    font-family: Verdana;
+}
+
+.skills__lista{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills__lista img{
+    height: 15vh;
+    width: 20vw;
+}
+
+.skills__lista__item{
+    align-items: center;
+    margin: 30px;
+}
+
+/*  Formacion Academica */
+
+#formacion h1{
+    font-family: Verdana;
+}
+
+.formacion__lista{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.formacion__lista li{
+    width: 30%;
+    margin: 20px 0;
+    font-family: bold;
+}
+
+.formacion__lista li img{
+    width: 100%;
+}
+
+.formacion__lista li h2{
+    margin: 20px 0;
+}
+
+/*  Proyectos   */
+
+#proyectos h1{
+    font-family: Verdana;
+}
+
+.proyecto__lista{
+    display: inline;
+}
+
+/*
+.proyecto__lista li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.proyecto__lista li img{
+    height: 20%;
+    width: 40vw;
+}
+*/
+
+.proyecto__lista li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.proyecto__lista li img{
+    width: 90%;
+}
+
+.proyecto__lista__titulo{
+    font-style: italic;
+    font-family: 'Segoe UI';
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.proyecto__lista__boton{
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    border: 2px outset grey;
+    border-radius: 15px;
+    margin: 15px 10px;
+    padding: 5px 70px;
+    box-shadow: 1px 1px black;
+}
+
+.proyecto__lista__boton:active{
+    border: 2px inset grey;
+}
+
+
+/*
+.proyecto__lista__boton{
+    width: 120px;
+    height: 30px;
+}
+
+.proyecto__lista__boton:hover{
+    box-shadow: none;
+    transform: translateX(2px) translateY(2px);
+}
+
+.proyecto__lista li:nth-child(2n)  .proyecto__lista__boton{
+    box-shadow: -1px 1px;
+}
+.proyecto__lista li:nth-child(2n){
+    flex-direction: row-reverse;
+}
+
+.proyecto__lista li:nth-child(2n) .proyecto__lista__boton:hover{
+    box-shadow: none;
+    transform: translateX(-2px) translateY(2px);
+}
+*/
+
+/*   Contacto   */
+
+#contacto h1{
+    font-family: Verdana;
+}
+
+#contacto > input{
+    color: white;
+}
+
+.contacto__input{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 7px 0;
+    box-shadow: 1px 1px;
+}
+
+.contacto__input:not(#mensaje){
+    width: 40%;
+    height: 25px;
+}
+
+.contacto__enviar{
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: transparent;
+    box-shadow: -1px 1px black;
+    font-weight: bold;
+}
+
+/*
+.contacto__enviar:hover{
+    box-shadow: none;
+    transform: translateX(-2px) translateY(2px);
+}
+*/
+
+
+/*  Pie de Pagina   */
+
+.rodapie{
+    min-height: 100px;
+    background-color: rgba(198,120,120,255);
+    padding: 20px 50px;
+    
+}
+
+.rodapie__lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    
+}
+
+.rodapie__lista a{
+    font-size: 3rem;
+    margin: 0px 10px;
+    color: #ffffff;
+}
+
+.rodapie__lista a:hover{
+    color: aqua;
+}
+
+.rodapie p{
+    color: #ffffff;
+    margin: 20px 0;
+}
