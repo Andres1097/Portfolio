@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" width="device-width" initial-scale="1.0">
+        <title>Portafolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/root.css">
+        <link rel="stylesheet" href="css/style_header.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="barra">
+                <h1>&#1078 Julian Gonzalez</h1>
+                <nav>
+                    <ul class="barra__lista">
+                        <li><a class="barra__lista__item" href="#acercade">Sobre Mi</a></li>
+                        <li><a class="barra__lista__item" href="#skills">Skills</a></li>
+                        <li><a class="barra__lista__item" href="#formacion">Formacion</a></li>
+                        <li><a class="barra__lista__item" href="#proyectos">Proyectos</a></li>
+                        <li><a class="barra__lista__item" href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="encabezado container">
+                <div class="encabezado__descripcion">
+                    <legend>Hola! soy Julian Gonzalez,<br> el diseñador de esta web, mucho gusto!</legend>
+                    <img class="encabezado__perfil" src="images/yo.jpg" alt="Foto Perfil">
+                </div>
+            </div>
+        </header>
+
+        <main>               
+            <div id="acercade" class="container">
+                <h1>Sobre mí</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit natus, sint voluptates, totam aspernatur dolor nemo autem, nulla nesciunt aliquid quae fugiat a? Ad tempore quos, ipsam vitae saepe provident?</p>
+            </div>
+
+            <div id="skills" class="container">
+                <h1>Skills</h1>
+                <ul class="skills__lista">
+                    <li><img src="images/html.svg" alt="html5" class="skills__lista__item" ></li>
+                    <li><img src="images/css.svg" alt="css3" class="skills__lista__item"></li>
+                    <li><img src="images/javascript.svg" alt="Javascript" class="skills__lista__item"></li>
+                    <li><img src="images/mysql.svg" alt="MySQL" class="skills__lista__item"></li>
+                    <li><img src="images/java.svg" alt="Java" class="skills__lista__item"></li>
+                    <li><img src="images/c++.svg" alt="C++" class="skills__lista__item"></li>
+                </ul>
+            </div>
+
+            <div id="formacion" class="container">
+                <h1>Formacion Academica</h1>
+                <ul class="formacion__lista">
+                    <li>
+                        <img src="images/unla.png" alt="Universidad Nacional de Lanus">
+                        <h2>Licenciatura en Sistemas</h2>
+                        <span>2016-Ahora</span>
+                    </li>
+                    <li>
+                        <img src="images/alura.png" alt="Alura Latam ONE">
+                        <h2>Formacion Front-End</h2>
+                        <span>Ahora</span>
+                    </li>
+                    <li>
+                        <img src="images/AP.png" alt="Argentina Programa">
+                        <h2>Formacion Full-Stack</h2>
+                        <span>2021-Ahora</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="proyectos" class="container">
+                <h1>Proyectos</h1>
+                <ul class="proyecto__lista">
+                    <li>
+                        <img src="images/Encriptador.png" alt="Presentacion proyecto encriptador">
+                        <section>
+                            <h2 class="proyecto__lista__titulo">Encriptador</h2>
+                            <a href="https://andres1097.github.io/Encriptador/" class="proyecto__lista__boton">Prueba</a>
+                            <a href="https://github.com/Andres1097/Encriptador" class="proyecto__lista__boton">Portafolio</a>
+                        </section>
+                    </li>
+                    <li>
+                        <img src="images/Ahorcado.png" alt="Presentacion proyecto ahorcado">
+                        <section>
+                            <h2 class="proyecto__lista__titulo">Ahorcado</h2>
+                            <a href="https://andres1097.github.io/Ahorcado/" class="proyecto__lista__boton">Prueba</a>
+                            <a href="https://github.com/Andres1097/Ahorcado" class="proyecto__lista__boton">Portafolio</a>
+                        </section>
+                    </li>
+                </ul>
+            </div>
+
+            <form action="#" id="contacto" class="container">
+                <h1>Contacto</h1>
+                <fieldset>
+                    <label for="nombreApellido">Nombre y Apellido</label>
+                    <input type="text" id="nombreApellido" class="contacto__input" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" class="contacto__input" required>
+
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" class="contacto__input" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea cols="70" rows="10" id="mensaje" class="contacto__input" required></textarea>
+                </fieldset>
+
+                <input type="submit" value="Enviar Mensaje" class="contacto__enviar">
+            </form>
+
+        </main>
+
+        <footer class="rodapie container">
+            <nav>
+                <ul class="rodapie__lista">
+                    <li><a class="rodapie__lista__icono" href="tel:+541122890855"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                    <li><a class="rodapie__lista__icono" href="https://www.instagram.com/andresjgz_/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a class="rodapie__lista__icono" href="https://www.linkedin.com/in/fsd-andres"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    <li><a class="rodapie__lista__icono" href="https://github.com/Andres1097"><ion-icon name="logo-github"></ion-icon></a></li>
+                </ul>
+            </nav>
+            <p class="copy">@2022 Desarrollado por Julian Gonzalez</p>
+        </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    </body>
+    
+</html>
