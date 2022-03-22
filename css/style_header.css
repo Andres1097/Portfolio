@@ -13,6 +13,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 2rem 0;
+    font-size: 1.8rem;
 }
 
 .barra h1{
@@ -50,6 +52,7 @@
 }
 
 .encabezado__descripcion legend{
+    font-size: 2.2rem;
     margin: 2rem 0;
 }
 
@@ -62,10 +65,6 @@
 
 #acercade h1{
     font-family: Verdana;
-}
-
-#acercade p{
-    
 }
 
 /*  Skills / Conocimiento   */
@@ -168,12 +167,17 @@
     color: white;
     font-family: 'Segoe UI';
     font-size: 20px;
-    border: 2px solid grey;
+    border: 2px outset grey;
     border-radius: 15px;
     margin: 15px 10px;
     padding: 5px 70px;
-    box-shadow: 2px 2px black;
+    box-shadow: 1px 1px black;
 }
+
+.proyecto__lista__boton:active{
+    border: 2px inset grey;
+}
+
 
 /*
 .proyecto__lista__boton{
