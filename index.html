@@ -15,32 +15,39 @@
     </head>
 
     <body>
-        <header>
-            <div class="barra">
-                <h1>&#1078 Julian Gonzalez</h1>
-                <nav>
-                    <ul class="barra__lista">
-                        <li><a class="barra__lista__item" href="#acercade">Sobre Mi</a></li>
-                        <li><a class="barra__lista__item" href="#skills">Skills</a></li>
-                        <li><a class="barra__lista__item" href="#formacion">Formacion</a></li>
-                        <li><a class="barra__lista__item" href="#proyectos">Proyectos</a></li>
-                        <li><a class="barra__lista__item" href="#contacto">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div class="barra">
+            <section class="menu">
+                <h1>&#215 Julian Gonzalez</h1>
+                <i class="fa-solid fa-bars toggle"></i>
+            </section>
 
-            <div class="encabezado container">
+            <h1>&#215 Julian Gonzalez</h1>
+            <nav>
+                <ul class="barra__lista">
+                    <li><a class="barra__lista__item" href="#acercade">Sobre Mi</a></li>
+                    <li><a class="barra__lista__item" href="#skills">Skills</a></li>
+                    <li><a class="barra__lista__item" href="#formacion">Formacion</a></li>
+                    <li><a class="barra__lista__item" href="#proyectos">Proyectos</a></li>
+                    <li><a class="barra__lista__item" href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <header class="encabezado container">
                 <div class="encabezado__descripcion">
                     <legend>Hola! soy Julian Gonzalez,<br> el diseñador de esta web, mucho gusto!</legend>
                     <img class="encabezado__perfil" src="images/yo.jpg" alt="Foto Perfil">
                 </div>
-            </div>
         </header>
 
         <main>               
             <div id="acercade" class="container">
                 <h1>Sobre mí</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit natus, sint voluptates, totam aspernatur dolor nemo autem, nulla nesciunt aliquid quae fugiat a? Ad tempore quos, ipsam vitae saepe provident?</p>
+                <p>
+                    Actualmente, me encuentro cursando el ultimo año de la carrera Licenciatura en Sistemas,
+                    en el cual, obtuve tanto conocimiento en Programacion como Lider de Proyectos. Soy bastante empatico,
+                    me gusta cooperar con el equipo de trabajo y poder ayudar a mis compañeros con sus dudas.
+                </p>
             </div>
 
             <div id="skills" class="container">
@@ -61,17 +68,17 @@
                     <li>
                         <img src="images/unla.png" alt="Universidad Nacional de Lanus">
                         <h2>Licenciatura en Sistemas</h2>
-                        <span>2016-Ahora</span>
+                        <span>2016-Actualmente</span>
                     </li>
                     <li>
                         <img src="images/alura.png" alt="Alura Latam ONE">
                         <h2>Formacion Front-End</h2>
-                        <span>Ahora</span>
+                        <span>Actualmente</span>
                     </li>
                     <li>
                         <img src="images/AP.png" alt="Argentina Programa">
                         <h2>Formacion Full-Stack</h2>
-                        <span>2021-Ahora</span>
+                        <span>2021-Actualmente</span>
                     </li>
                 </ul>
             </div>
@@ -83,16 +90,16 @@
                         <img src="images/Encriptador.png" alt="Presentacion proyecto encriptador">
                         <section>
                             <h2 class="proyecto__lista__titulo">Encriptador</h2>
-                            <a href="https://andres1097.github.io/Encriptador/" class="proyecto__lista__boton">Prueba</a>
-                            <a href="https://github.com/Andres1097/Encriptador" class="proyecto__lista__boton">Portafolio</a>
+                            <a href="https://andres1097.github.io/Encriptador/" target="_blank" class="proyecto__lista__boton">Prueba</a>
+                            <a href="https://github.com/Andres1097/Encriptador" target="_blank" class="proyecto__lista__boton">Portafolio</a>
                         </section>
                     </li>
                     <li>
                         <img src="images/Ahorcado.png" alt="Presentacion proyecto ahorcado">
                         <section>
                             <h2 class="proyecto__lista__titulo">Ahorcado</h2>
-                            <a href="https://andres1097.github.io/Ahorcado/" class="proyecto__lista__boton">Prueba</a>
-                            <a href="https://github.com/Andres1097/Ahorcado" class="proyecto__lista__boton">Portafolio</a>
+                            <a href="https://andres1097.github.io/Ahorcado/" target="_blank" class="proyecto__lista__boton">Prueba</a>
+                            <a href="https://github.com/Andres1097/Ahorcado" target="_blank" class="proyecto__lista__boton">Portafolio</a>
                         </section>
                     </li>
                 </ul>
@@ -122,19 +129,26 @@
         <footer class="rodapie container">
             <nav>
                 <ul class="rodapie__lista">
-                    <li><a class="rodapie__lista__icono" href="tel:+541122890855"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
-                    <li><a class="rodapie__lista__icono" href="https://www.instagram.com/andresjgz_/"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    <li><a class="rodapie__lista__icono" href="https://www.linkedin.com/in/fsd-andres"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                    <li><a class="rodapie__lista__icono" href="https://github.com/Andres1097"><ion-icon name="logo-github"></ion-icon></a></li>
+                    <li><a href="https://wa.me/+5491122890855" target="_blank" title="+5491122890855"><i class="fa fa-whatsapp"></i></a></li>
+                    <li><a href="https://www.instagram.com/andresjgz_/" target="_blank" title="andresjgz_"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/fsd-andres" target="_blank" title="fsd-andres"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/Andres1097" target="_blank" title="Andres1097"><i class="fa fa-github"></i></a></li>
                 </ul>
             </nav>
             <p class="copy">@2022 Desarrollado por Julian Gonzalez</p>
         </footer>
 
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/27f2603a05.js" crossorigin="anonymous"></script>
+    <script>
+        const menu = document.querySelector(".toggle");
+        const barra = document.querySelector(".barra__lista");
+        menu.onclick = mostrar;
 
+        function mostrar(){
+            barra.classList.toggle('active');
+        }
+    </script>
     </body>
     
 </html>
