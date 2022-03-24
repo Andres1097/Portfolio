@@ -1,21 +1,43 @@
 :root{
     font-family: 'Barlow', sans-serif, 'Segoe UI', Verdana;
+
+    --fondoBarra: #002255;
+    --fondoBarraActiva: #022861;
+
+    --barraItem: #b84d49;
+    --barraItemSombrado: #ac4844;
+    
+    --tituloTexto: #ffffff;
+    --hover: #00ffff;
+
+    --botonContacto: #a13d3a;
+    --botonContactoHover: #e75d58;
+
+    --botonProyecto: #03689b;
+    --botonProyectoActivo: #059eeb;
+    --bordeadoBotonProyecto: #888888;
+
+    --fondoNegro: #000000;
+    --fondoFormacion: rgba(10,11,12,255);
+    --fondoProyecto: rgba(20,21,23,255);
+    --fondoRodapie: rgba(198,120,120,255);
+
 }
 
 html{
     scroll-behavior: smooth;
-    background-color: #000000;
+    background-color: var(--fondoNegro);
 }
 
 body{
     font-size: 1.5rem;
     font-weight: bold;
     box-sizing: border-box;
-    color:white;
+    color:var(--tituloTexto);
 }
 
 header{
-    background-image: url('header.jpg'), linear-gradient(rgba(0,0,2,255), #000000);
+    background-image: url('header.jpg'), linear-gradient(rgba(0,0,2,255), var(--fondoNegro));
     background-attachment: local;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -39,12 +61,12 @@ header{
 }
 
 #formacion{
-    background-image: url(''), linear-gradient(#000000, rgba(10,11,12,255) 60%);
+    background-image: url(''), linear-gradient(var(--fondoNegro), var(--fondoFormacion) 60%);
     background-repeat: no-repeat;
 }
 
 #proyectos{
-    background-image: url('proyectos.png'), linear-gradient(rgba(10,11,12,255), rgba(20,21,23,255));
+    background-image: url('proyectos.png'), linear-gradient(var(--fondoFormacion), var(--fondoProyecto));
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
@@ -52,7 +74,7 @@ header{
 
 
 #contacto{
-    background-image: url('rodapie.jpg'), linear-gradient(rgba(20,21,23,255), rgba(198,120,120,255));
+    background-image: url('rodapie.jpg'), linear-gradient(var(--fondoProyecto), var(--fondoRodapie));
     background-attachment: local;
     background-repeat: no-repeat;
     background-size: 100% 100%;
