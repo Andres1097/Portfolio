@@ -21,6 +21,10 @@ header{
     background-size: 100% 100%;
 }
 
+#acercade, #skills, #formacion, #proyectos, #contacto{
+    padding-top: 90px;
+}
+
 #acercade{
     background-image: url('');
     background-repeat: no-repeat;
@@ -35,7 +39,7 @@ header{
 }
 
 #formacion{
-    background-image: url(''), linear-gradient(#000000, rgba(10,11,12,255));
+    background-image: url(''), linear-gradient(#000000, rgba(10,11,12,255) 60%);
     background-repeat: no-repeat;
 }
 
