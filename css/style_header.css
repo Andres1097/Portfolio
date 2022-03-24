@@ -60,7 +60,7 @@
     flex-direction: column;
     background-color: var(--fondoBarraActiva);
     width: 100%;
-    height: 70vh;
+    height: 55vh;
     align-items: center;
     justify-content: space-evenly;
     z-index: 100;
@@ -71,6 +71,7 @@
     text-decoration: none;
     color: var(--tituloTexto);
     border-bottom: 5px solid grey;
+    font-size: 2.5rem;
 }
 
 .barra__lista__item:hover{
@@ -282,7 +283,7 @@
 @media screen and (min-width:1080px) {
 
     /* Barra Navegacion */
-    
+
     .menu{
        display: none;
     }
@@ -326,6 +327,7 @@
         text-decoration: none;
         margin: 0 7px;
         transition: 0.5s;
+        font-size: 1.8rem;
     }
     
     .barra__lista__item:hover{
