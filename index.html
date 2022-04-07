@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/root.css">
-        <link rel="stylesheet" href="css/style_header.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
@@ -142,11 +142,11 @@
     <script>
         const menu = document.querySelector(".toggle");
         const barra = document.querySelector(".barra__lista");
-        menu.onclick = mostrar;
-
-        function mostrar(){
-            barra.classList.toggle('active');
-        }
+        const barraItems = barra.childNodes;
+        menu.onclick = () => {barra.classList.toggle('active')};
+        barraItems.forEach(barraAux => barraAux.onclick = () => {
+            barra.classList.remove('active')
+        });
     </script>
     </body>
     
