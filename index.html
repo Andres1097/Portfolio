@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <html>
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" width="device-width" initial-scale="1.0">
@@ -52,12 +51,12 @@
             <div id="skills" class="container">
                 <h1>Skills</h1>
                 <ul class="skills__lista">
-                    <li><img src="images/html.svg" alt="html5" class="skills__lista__item" ></li>
-                    <li><img src="images/css.svg" alt="css3" class="skills__lista__item"></li>
-                    <li><img src="images/javascript.svg" alt="Javascript" class="skills__lista__item"></li>
-                    <li><img src="images/mysql.svg" alt="MySQL" class="skills__lista__item"></li>
-                    <li><img src="images/java.svg" alt="Java" class="skills__lista__item"></li>
-                    <li><img src="images/c++.svg" alt="C++" class="skills__lista__item"></li>
+                    <li><img src="images/html.svg" alt="html5" class="skills__lista--item" ></li>
+                    <li><img src="images/css.svg" alt="css3" class="skills__lista--item"></li>
+                    <li><img src="images/javascript.svg" alt="Javascript" class="skills__lista--item"></li>
+                    <li><img src="images/mysql.svg" alt="MySQL" class="skills__lista--item"></li>
+                    <li><img src="images/java.svg" alt="Java" class="skills__lista--item"></li>
+                    <li><img src="images/c++.svg" alt="C++" class="skills__lista--item"></li>
                 </ul>
             </div>
 
@@ -88,7 +87,12 @@
                     <li>
                         <img src="images/Encriptador.png" alt="Presentacion proyecto encriptador">
                         <section>
-                            <h2 class="proyecto__lista__titulo">Encriptador</h2>
+                            <h2 class="proyecto__lista--titulo">Encriptador</h2>
+                            <ul class="proyecto__lista--lenguajes">
+                                <li title="HTML5"><i class="fa-brands fa-html5"></i></li>
+                                <li title="CCS3"><i class="fa-brands fa-css3-alt"></i></li>
+                                <li title="Javascript"><i class="fa-brands fa-js-square"></i></li>
+                            </ul>
                             <a href="https://andres1097.github.io/Encriptador/" target="_blank" class="proyecto__lista__boton">Prueba</a>
                             <a href="https://github.com/Andres1097/Encriptador" target="_blank" class="proyecto__lista__boton">Portafolio</a>
                         </section>
@@ -96,9 +100,27 @@
                     <li>
                         <img src="images/Ahorcado.png" alt="Presentacion proyecto ahorcado">
                         <section>
-                            <h2 class="proyecto__lista__titulo">Ahorcado</h2>
+                            <h2 class="proyecto__lista--titulo">Ahorcado</h2>
+                            <ul class="proyecto__lista--lenguajes">
+                                <li title="HTML5"><i class="fa-brands fa-html5"></i></li>
+                                <li title="CCS3"><i class="fa-brands fa-css3-alt"></i></li>
+                                <li title="Javascript"><i class="fa-brands fa-js-square"></i></li>
+                            </ul>
                             <a href="https://andres1097.github.io/Ahorcado/" target="_blank" class="proyecto__lista__boton">Prueba</a>
                             <a href="https://github.com/Andres1097/Ahorcado" target="_blank" class="proyecto__lista__boton">Portafolio</a>
+                        </section>
+                    </li>
+                    <li>
+                        <img src="images/Fibonacci.png" alt="Presentacion proyecto Fibonacci">
+                        <section>
+                            <h2 class="proyecto__lista--titulo">Fibonacci</h2>
+                            <ul class="proyecto__lista--lenguajes">
+                                <li title="HTML5"><i class="fa-brands fa-html5"></i></li>
+                                <li title="CCS3"><i class="fa-brands fa-css3-alt"></i></li>
+                                <li title="Javascript"><i class="fa-brands fa-js-square"></i></li>
+                            </ul>
+                            <a href="https://andres1097.github.io/Fibonacci/" target="_blank" class="proyecto__lista__boton">Prueba</a>
+                            <a href="https://github.com/Andres1097/Fibonacci" target="_blank" class="proyecto__lista__boton">Portafolio</a>
                         </section>
                     </li>
                 </ul>
@@ -107,17 +129,26 @@
             <form action="#" id="contacto" class="container">
                 <h1>Contacto</h1>
                 <fieldset>
-                    <label for="nombreApellido">Nombre y Apellido</label>
-                    <input type="text" id="nombreApellido" class="contacto__input" required>
-
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" class="contacto__input" required>
-
-                    <label for="asunto">Asunto</label>
-                    <input type="text" id="asunto" class="contacto__input" required>
-
-                    <label for="mensaje">Mensaje</label>
-                    <textarea cols="70" rows="10" id="mensaje" class="contacto__input" required></textarea>
+                    <div>
+                        <label for="nombreApellido">Nombre y Apellido</label>
+                        <input type="text" id="nombreApellido" class="contacto__input" required data-tipo="nombre">
+                        <span class="contacto__input--error"></span>
+                    </div>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" class="contacto__input" required data-tipo="email">
+                        <span class="contacto__input--error"></span>
+                    </div>
+                    <div>
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" class="contacto__input" required pattern="[\s\S]{6,40}" data-tipo="asunto">
+                        <span class="contacto__input--error"></span>
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea cols="70" rows="10" id="mensaje" class="contacto__input" maxlength="200" required data-tipo="mensaje"></textarea>
+                        <span class="contacto__input--error"></span>
+                    </div>
                 </fieldset>
 
                 <input type="submit" value="Enviar Mensaje" class="contacto__enviar">
@@ -139,15 +170,7 @@
 
 
     <script src="https://kit.fontawesome.com/27f2603a05.js" crossorigin="anonymous"></script>
-    <script>
-        const menu = document.querySelector(".toggle");
-        const barra = document.querySelector(".barra__lista");
-        const barraItems = barra.childNodes;
-        menu.onclick = () => {barra.classList.toggle('active')};
-        barraItems.forEach(barraAux => barraAux.onclick = () => {
-            barra.classList.remove('active')
-        });
-    </script>
+    <script type="module" src="script/app.js"></script>
+
     </body>
-    
 </html>
