@@ -4,17 +4,22 @@
     --fondoBarra: #002255;
     --fondoBarraActiva: #022861;
 
-    --barraItem: #b84d49;
+    --barraItemHover: #b84d49;
     --barraItemSombrado: #ac4844;
     
     --tituloTexto: #ffffff;
     --hover: #00ffff;
 
+    --textoEncabezado: #b87613;
+    --sombraTextoEncabezado: #c69c6d;
+    --fondoEncabezadoDescripcion: #b6b6b6;
+
     --botonContacto: #a13d3a;
     --botonContactoHover: #e75d58;
 
     --botonProyecto: #03689b;
-    --botonProyectoActivo: #059eeb;
+    --botonProyectoHover: #199bdb;
+
     --bordeadoBotonProyecto: #888888;
 
     --fondoNegro: #000000;
@@ -41,6 +46,17 @@ header{
     background-attachment: local;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-family: Verdana;
+    padding: 10px;
+}
+
+.fa, .fa-brands{
+    font-size: 3rem;
+    margin: 0px 10px;
 }
 
 #acercade, #skills, #formacion, #proyectos, #contacto{
@@ -71,7 +87,6 @@ header{
     background-position: bottom;
     background-size: contain;
 }
-
 
 #contacto{
     background-image: url('rodapie.jpg'), linear-gradient(var(--fondoProyecto), var(--fondoRodapie));

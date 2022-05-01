@@ -41,7 +41,7 @@
 }
 
 #titulo__movil:hover{
-    color: var(--hover);
+    color: var(--barraItemHover);
 }
 
 .barra__menu i{
@@ -75,7 +75,7 @@
 }
 
 .barra__lista__item:hover{
-    color: var(--barraItem);
+    color: var(--barraItemHover);
     border-bottom: 5px solid var(--barraItemSombrado);
 }
 
@@ -103,8 +103,10 @@
 }
 
 .encabezado__descripcion legend{
-    font-size: 2.2rem;
+    font-size: 2.6rem;
     margin: 2rem 0;
+    color: var(--sombraTextoEncabezado);
+    text-shadow: 1px 1px var(--textoEncabezado);
 }
 
 .encabezado__perfil{
@@ -122,7 +124,6 @@
 /*  Skills / Conocimiento   */
 
 .skills__lista{
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -134,7 +135,7 @@
     width: 20vw;
 }
 
-.skills__lista__item{
+.skills__lista--item{
     align-items: center;
     margin: 30px;
 }
@@ -180,11 +181,18 @@
     width: 90%;
 }
 
-.proyecto__lista__titulo{
+.proyecto__lista--titulo{
     font-style: italic;
     font-family: 'Segoe UI';
     font-size: 50px;
-    margin: 40px 0;
+    margin: 5px 0;
+    transform: translateY(1rem);
+}
+
+.proyecto__lista--lenguajes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .proyecto__lista__boton{
@@ -202,21 +210,11 @@
 }
 
 .proyecto__lista__boton:active{
-    background-color: var(--botonProyectoActivo);
+    background-color: var(--botonProyectoHover);
     border: 2px inset var(--bordeadoBotonProyecto);
 }
 
 /*   Contacto   */
-
-#contacto h1{
-    font-family: Verdana;
-    font-size: 2.5rem;
-    padding: 10px;
-}
-
-#contacto > input{
-    color: var(--tituloTexto);
-}
 
 .contacto__input{
     display: flex;
@@ -227,12 +225,18 @@
     opacity: 0.9;
 }
 
+.contacto__input--error{
+    font-size: 1rem;
+    padding-left: 6rem;
+}
+
 .contacto__input:not(#mensaje){
     width: 40%;
-    height: 25px;
+    height: 35px;
 }
 
 .contacto__enviar{
+    color: var(--tituloTexto);
     width: 250px;
     height: 40px;
     border-radius: 15px;
@@ -265,8 +269,6 @@
 }
 
 .rodapie__lista a{
-    font-size: 3rem;
-    margin: 0px 10px;
     color: var(--tituloTexto);
 }
 
@@ -315,7 +317,7 @@
     }
 
     #titulo__desktop:hover{
-        color: var(--hover);
+        color: var(--barraItemHover);
     }
     
     .barra__lista{
@@ -328,10 +330,6 @@
         margin: 0 7px;
         transition: 0.5s;
         font-size: 1.8rem;
-    }
-    
-    .barra__lista__item:hover{
-        color: var(--hover);
     }
 
     /*  Proyectos   */
@@ -354,16 +352,15 @@
         margin: 10px 10px;
         padding: 10px 25px;
         box-shadow: 2px 2px var(--fondoNegro);
-        transition: 0.5s ease-in-out;
+        transition: 0.5s;
     }
 
     .proyecto__lista__boton:hover{
-        background-color: var(--hover);
+        background-color: var(--botonProyectoHover);
     }
 
     .proyecto__lista__boton:active{
         border: 2px inset var(--bordeadoBotonProyecto);
-        background-color: var(--botonProyectoActivo);
    }
 
     .proyecto__lista li:nth-child(2n){
